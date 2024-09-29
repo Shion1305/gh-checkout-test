@@ -1,0 +1,12 @@
+name: "run chekcout test"
+on:
+  push:
+    branch:
+      - main
+jobs:
+  run-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: branch-does-not-exist
